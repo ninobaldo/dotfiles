@@ -22,6 +22,8 @@
           - git
           - htop
           - vim
+          - alacritty
+          - podman
           # - firefox
           # - gh
           # - gnome-tweaks
@@ -81,16 +83,21 @@
         name: "{{ remote_regular_user }}"
         shell: /usr/bin/zsh
 
-    # - name: Install Flatpak packages
-    #   community.general.flatpak:
-    #     name:
-    #       - com.obsproject.Studio
-    #       - org.videolan.VLC
-    #       - org.tenacityaudio.Tenacity
-    #       - md.obsidian.Obsidian
-    #       - org.gimp.GIMP
-    #       - rest.insomnia.Insomnia
-    #       - com.github.johnfactotum.Foliate
-    #       - org.gnome.meld
-    #       - org.sqlitebrowser.sqlitebrowser
-    #     state: present
+    - name: Install Flatpak packages
+      community.general.flatpak:
+        name:
+          - com.skype.Client
+          - com.slack.Slack
+          - com.spotify.Client
+          - io.podman_desktop.PodmanDesktop
+          - org.jdownloader.JDownloader
+          # - com.obsproject.Studio
+          # - org.videolan.VLC
+          # - org.tenacityaudio.Tenacity
+          # - md.obsidian.Obsidian
+          # - org.gimp.GIMP
+          # - rest.insomnia.Insomnia
+          # - com.github.johnfactotum.Foliate
+          # - org.gnome.meld
+          # - org.sqlitebrowser.sqlitebrowser
+        state: present
