@@ -37,3 +37,10 @@ EOF
 chmod +x initial.sh
 ./initial.sh
 ```
+
+# Referências
+
+- https://www.chezmoi.io/
+- https://github.com/logandonley/dotfiles
+- https://github.com/mischavandenburg/dotfiles
+- https://github.com/ALT-F4-LLC/dotfiles
