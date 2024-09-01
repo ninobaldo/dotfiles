@@ -22,13 +22,12 @@
           - git
           - htop
           - vim
-          # - alacritty
+          - alacritty
           - podman
           # - firefox
           # - gh
           # - gnome-tweaks
           # - gcc
-          #
           # - helm
           # - go-task
           # - ripgrep
